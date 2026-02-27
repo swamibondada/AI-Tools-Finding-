@@ -341,26 +341,13 @@ function renderResults(query, tools) {
     tools.forEach((tool, index) => {
         html += `
             <div class="tool-card fade-in" style="animation-delay: ${index * 0.1}s">
-                <div class="tool-number">${index + 1})</div>
                 <div class="tool-info">
-                    <div class="tool-header">
-                        <div class="tool-name">${tool.name}</div>
-                    </div>
-                    <div class="tool-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Pricing</span>
-                            <span class="detail-value">${tool.pricing}</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Rating</span>
-                            <span class="detail-value">${tool.rating}</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Official Link</span>
-                            <a href="${tool.link}" class="tool-link" target="_blank" rel="noopener noreferrer">
-                                Visit Website →
-                            </a>
-                        </div>
+                    <div class="tool-name">${tool.name}</div>
+                    <div class="tool-details-minimal">
+                        <span class="detail-label">Official Website:</span>
+                        <a href="${tool.link}" class="tool-link-minimal" target="_blank" rel="noopener noreferrer">
+                            ${tool.link}
+                        </a>
                     </div>
                 </div>
             </div>
