@@ -301,4 +301,29 @@ button#search-btn:active {
         flex-direction: column;
         gap: 1rem;
     }
+
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        background: transparent;
+        border: none;
+        backdrop-filter: none;
+    }
+
+    input {
+        background: var(--bg-card);
+        backdrop-filter: blur(12px);
+        border: 1px solid var(--border-glass);
+        border-radius: 20px;
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    button#search-btn {
+        width: 100%;
+        padding: 1.25rem;
+        border-radius: 20px;
+        font-size: 1.1rem;
+    }
 }
